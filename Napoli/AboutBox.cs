@@ -13,7 +13,7 @@ namespace Napoli
         public AboutBox()
         {
             InitializeComponent();
-            this.Text = String.Format("О {0}", AssemblyTitle);
+            this.Text = String.Format("О {0} {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Версия {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
