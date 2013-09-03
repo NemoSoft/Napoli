@@ -2,23 +2,22 @@
  * Сделано в SharpDevelop.
  * Пользователь: ashylnikov
  * Дата: 03.09.2013
- * Время: 10:38
+ * Время: 11:00
  * 
  * Для изменения этого шаблона используйте Сервис | Настройка | Кодирование | Правка стандартных заголовков.
  */
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace Napoli
 {
 	/// <summary>
-	/// Description of MainForm.
+	/// Description of AboutBox.
 	/// </summary>
-	public partial class MainForm : Form
+	public partial class AboutBox : Form
 	{
-		public MainForm()
+		public AboutBox()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -28,16 +27,14 @@ namespace Napoli
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-		}
-		
-		void ClickOnExitInMenus(object sender, EventArgs e)
-		{
-			Application.Exit();
-		}
-		void ClickonAbout(object sender, System.EventArgs e)
-		{
-			AboutBox box = new AboutBox();
-     		box.Show();
+			
+			
+        	//this.Text = String.Format("О {0} {0}", AssemblyTitle);
+          //  this.labelProductName.Text = AssemblyProduct;
+         //   this.labelVersion.Text = String.Format("Версия {0} {0}", AssemblyVersion);
+           // this.labelCopyright.Text = AssemblyCopyright;
+           // this.labelCompanyName.Text = AssemblyCompany;
+           // this.textBoxDescription.Text = AssemblyDescription;
 		}
 	}
 }
