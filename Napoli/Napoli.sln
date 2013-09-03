@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.3
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Napoli", "Napoli.csproj", "{058061DE-B09D-4F14-86F4-0C2751D970AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{058061DE-B09D-4F14-86F4-0C2751D970AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058061DE-B09D-4F14-86F4-0C2751D970AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058061DE-B09D-4F14-86F4-0C2751D970AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058061DE-B09D-4F14-86F4-0C2751D970AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
