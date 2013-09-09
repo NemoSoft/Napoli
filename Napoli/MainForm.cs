@@ -7,8 +7,6 @@
  * Для изменения этого шаблона используйте Сервис | Настройка | Кодирование | Правка стандартных заголовков.
  */
 using System;
-using System.Collections.Generic;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace Napoli
@@ -41,6 +39,28 @@ namespace Napoli
 		}
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddPatient adpt = new AddPatient();
+            adpt.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "napoliDataSet1.v_patients". При необходимости она может быть перемещена или удалена.
+            this.v_patientsTableAdapter.Fill(this.napoliDataSet1.v_patients);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "napoliDataSet1.patients". При необходимости она может быть перемещена или удалена.
+            this.patientsTableAdapter.Fill(this.napoliDataSet1.patients);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "napoliDataSet1.operators". При необходимости она может быть перемещена или удалена.
+            this.operatorsTableAdapter.Fill(this.napoliDataSet1.operators);
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

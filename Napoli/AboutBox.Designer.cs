@@ -17,11 +17,12 @@
             {
                 components.Dispose();
 				}
-            }
+            
             base.Dispose(disposing);
-        }
+    }
+        
 
-        #region Код, автоматически созданный конструктором форм Windows
+#region Код, автоматически созданный конструктором форм Windows
 
         /// <summary>
         /// Обязательный метод для поддержки конструктора - не изменяйте
@@ -184,5 +185,5 @@
         private System.Windows.Forms.Label labelCompanyName;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Button okButton;
-    }
-}
+
+}}
