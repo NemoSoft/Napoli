@@ -32,5 +32,16 @@ namespace Napoli.Properties {
                 return ((string)(this["napoliConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=napoli_user;password=1;persistsecurityinfo=True;database" +
+            "=napoli;allowbatch=True")]
+        public string napoliConnection {
+            get {
+                return ((string)(this["napoliConnection"]));
+            }
+        }
     }
 }

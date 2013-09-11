@@ -51,18 +51,25 @@ namespace Napoli
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "napoliDataSet1.v_patients". При необходимости она может быть перемещена или удалена.
-            this.v_patientsTableAdapter.Fill(this.napoliDataSet1.v_patients);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "napoliDataSet1.patients". При необходимости она может быть перемещена или удалена.
-            this.patientsTableAdapter.Fill(this.napoliDataSet1.patients);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "napoliDataSet1.operators". При необходимости она может быть перемещена или удалена.
-            this.operatorsTableAdapter.Fill(this.napoliDataSet1.operators);
+            
 
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void editPatientBtn_Click(object sender, EventArgs e)
+        {
+            EditPatient edpt = new EditPatient();
+            edpt.ShowDialog();
+        }
+
+        private void referencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Dictionaries dict = new Dictionaries();
+            dict.ShowDialog();
         }
 	}
 }

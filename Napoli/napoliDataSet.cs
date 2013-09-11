@@ -2,8 +2,10 @@
     
     
     public partial class napoliDataSet {
-        partial class DataTable1DataTable
+
+        public void addPatient() 
         {
+            
         }
     }
 }
